@@ -1,0 +1,3 @@
+<app-header (addViewSelected)="onAddViewSelected($event)" [title]="title"></app-header>
+<app-add-blog *ngIf="addBlog"></app-add-blog>
+<app-view-blogs *ngIf="!addBlog"></app-view-blogs>

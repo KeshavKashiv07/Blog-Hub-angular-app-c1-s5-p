@@ -1,0 +1,15 @@
+<div class="blog-container">
+    <div class="blog" *ngFor="let blog of blogs">
+        <a href="#">
+             <h3>{{blog.title}}</h3>
+             <p>{{blog.content}}</p>
+            <div class="blog-footer">
+                <span class="author-initial">{{blog.author?.charAt(0)}}</span>
+                <div class="post-details">
+                       <div class="blog-author">by {{blog.author}}</div>
+                       <div class="blog-date">{{blog.date}}</div>
+                </div>
+            </div>
+        </a> 
+    </div>
+</div>
